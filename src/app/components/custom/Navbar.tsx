@@ -1,11 +1,8 @@
-import { Search, TvMinimalPlay } from "lucide-react";
+import { TvMinimalPlay } from "lucide-react";
 import Link from "next/link";
-import { FormEvent } from "react";
+import NavbarSearch from "../common/NavbarSearch";
 
 export default function Navbar() {
-  const handleSubmit = (e: FormEvent) => {
-    e.preventDefault();
-  };
   return (
     <main className="bg-balck/90 sticky -top-2 z-50 md:py-3">
       <div className="baseContainer flex justify-between items-center gap-4">
@@ -17,14 +14,7 @@ export default function Navbar() {
           </Link>
         </div>
 
-        <form className="flex" onSubmit={() => handleSubmit}>
-          <label htmlFor="search">
-            <input type="text" name="search" id="search" placeholder="Search" />
-            <button type="submit" className="bg-gray-300 p-[auto]">
-              <Search />
-            </button>
-          </label>
-        </form>
+        <NavbarSearch />
 
         <div className="hidden lg:flex justify-center items-center text-[1rem] lg:text-lg">
           large{" "}
