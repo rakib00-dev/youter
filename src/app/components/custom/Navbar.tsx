@@ -17,7 +17,7 @@ export default function Navbar() {
         <NavbarSearch />
 
         <div className="hidden lg:flex justify-center items-center text-[1rem] lg:text-lg">
-          large{" "}
+          medium man logo
         </div>
       </div>
     </main>
