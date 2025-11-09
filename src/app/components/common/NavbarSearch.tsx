@@ -9,10 +9,22 @@ export default function NavbarSearch() {
 
   return (
     <form className="flex" onSubmit={() => handleSubmit}>
-      <label htmlFor="search">
-        <input type="text" name="search" id="search" placeholder="Search" />
-        <button type="submit" className="bg-gray-300 p-[auto]">
-          <Search />
+      <label
+        htmlFor="search"
+        className="shadow-inner outline outline-gray-400 rounded-full flex justify-center items-center  w-full"
+      >
+        <input
+          type="text"
+          name="search"
+          id="search"
+          placeholder="Search"
+          className="px-4 py-2 w-md outline-none"
+        />
+        <button
+          type="submit"
+          className="cursor-pointer bg-gray-50 outline outline-gray-300 text-white p-[auto] px-4 rounded-r-full py-2"
+        >
+          <Search className="text-black" />
         </button>
       </label>
     </form>
