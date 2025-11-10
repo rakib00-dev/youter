@@ -1,8 +1,10 @@
 "use client";
 import { Search } from "lucide-react";
-import { FormEvent } from "react";
+import { FormEvent, useState } from "react";
 
 export default function NavbarSearch() {
+  const [search, setSearch] = useState("");
+
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
   };
@@ -19,6 +21,8 @@ export default function NavbarSearch() {
           id="search"
           placeholder="Search"
           className="px-4 py-2 w-md outline-none"
+          onChange={(e) => setSearch(e.target.value)}
+          value={search}
         />
         <button
           type="submit"
