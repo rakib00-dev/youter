@@ -20,7 +20,7 @@ export default function NavbarSearch() {
           name="search"
           id="search"
           placeholder="Search"
-          className="px-4 py-2 w-md outline-none"
+          className="md:px-4 py-1 px-2 md:py-2 md:w-md outline-none"
           onChange={(e) => setSearch(e.target.value)}
           value={search}
         />
