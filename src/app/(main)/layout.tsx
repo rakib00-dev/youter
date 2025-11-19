@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Youter | youtuber + twitter",
-  description: "this is my full stack app combining youtube + twitter",
+  description: "This is my full stack app combining youtube + twitter",
 };
 
 export default function RootLayout({
